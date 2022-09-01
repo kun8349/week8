@@ -5,105 +5,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Boostrap Index</title>
+    <title>NFT</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./assets/style/all.css">
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
+    <div class="bg-light border-bottom border-black border-1">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light p-0">
+          <div class="container">
+            <h1 class="fs-6 mb-0 py-8">
+              <a class="navbar-brand" href="#">
+                <img src="assets/images/week8-202207/logo.svg" alt="logo" style="width: 190px;">
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </h1>
+            <div class="d-flex align-items-center">
+              <a class="d-lg-none nav-link active p-0 fw-bold fs-5 me-6" aria-current="page" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse flex-grow-0 bg-white bg-lg-light" id="navbarSupportedContent">
+              <ul class="navbar-nav mb-lg-0">
+                <li class="d-none nav-item d-lg-flex px-12 py-10 border-title-left border-title-right">
+                  <input class="bg-light border-0 p-0 me-6" type="text" placeholder="搜尋作品名稱、藝術家名稱" style="width: 228px;">
+                  <a class="nav-link active p-0 fw-bold" aria-current="page" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </li>
+                <li class="nav-item border-title-right header-hover">
+                  <a class="py-6 px-lg-12 py-lg-10 text-center nav-link text-black fs-6 fw-bold" href="#">探索</a>
+                </li>
+                <li><hr class="dropdown-divider m-0"></li>
+                <li class="nav-item border-title-right header-hover">
+                  <a class="py-6 px-lg-12 py-lg-10 text-center nav-link text-black fs-6 fw-bold" href="#">市值</a>
+                </li>
+                <li class="nav-item header-hover">
+                  <a class="py-lg-6 text-lg-center px-lg-12 py-lg-10 nav-link text-black fs-lg-6 fw-lg-bold p-0" href="#"><i class="wallet fa-solid fa-wallet"></i><p class="d-lg-none bg-primary text-center py-6 fs-6 mb-6 fw-bold">連結錢包</p></a>
+                </li>
               </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-        </div>
-      </div>
-    </nav>
+            </div>
+          </div>
+        </nav>
+     
+    </div>
+    
+  
 
     
 <div class="container">
-  <h1 class="index__h1">這是一段話</h1>
-  <div class="alert alert-primary" role="alert">
-    A simple primary alert—check it out!
-  </div>
-  <div class="alert alert-secondary" role="alert">
-    A simple secondary alert—check it out!
-  </div>
-  <div class="alert alert-success" role="alert">
-    A simple success alert—check it out!
-  </div>
-  <div class="alert alert-danger" role="alert">
-    A simple danger alert—check it out!
-  </div>
-  <div class="alert alert-warning" role="alert">
-    A simple warning alert—check it out!
-  </div>
-  <div class="alert alert-info" role="alert">
-    A simple info alert—check it out!
-  </div>
-  <div class="alert alert-light" role="alert">
-    A simple light alert—check it out!
-  </div>
-  <div class="alert alert-dark" role="alert">
-    A simple dark alert—check it out!
-  </div>
-</div>
-
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
+    <i class="fa-solid fa-wallet font fw-bold"></i>
+<h1 class="font-family fs-4 fs-md-1">hello</h1>
+<h2 class="m-8 m-md-12">hello</h2>
+<p>hello</p>
+<span>hello</span>
+<a href="" class="text-white">hello</a>
+  <a href="" class="bg-black text-white rounded-4 p-3">123</a>
 </div>
 
 
-    <footer class="footer">
-      footer
+
+    <footer class="bg-light">
+      <div class="container">
+        <p class="text-center fs-6 py-6">© ART NFT. All Rights Reserved</p>
+      </div>
+      
     </footer>
 
     <script src="./assets/js/vendors.js"></script>
