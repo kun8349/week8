@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Paytone+One&display=swap");
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -15304,6 +15305,10 @@ ul {
   font-family: "Squada One","Noto Sans";
 }
 
+.font-number {
+  font-family: 'Paytone One',"Noto Sans";
+}
+
 .triangle {
   position: absolute;
   right: 1px;
@@ -15312,6 +15317,12 @@ ul {
   height: 0;
   border-right: 16px solid #E6553B;
   border-top: 16px solid transparent;
+}
+
+.more {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 @media (min-width: 991px) {
@@ -15351,6 +15362,70 @@ ul {
   .h-lg-340 {
     height: 340px !important;
   }
+  .h-lg-374 {
+    height: 374px !important;
+  }
+  .ranking-number {
+    position: absolute;
+    border: 1px solid black;
+    font-size: 32px !important;
+    padding: 7px 24px;
+    background-color: white;
+    top: -1px;
+    left: -1px;
+    z-index: 1;
+  }
+  .img-hover {
+    position: relative;
+    background-color: #000;
+  }
+  .img-hover:hover::after {
+    content: 'more';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.7;
+    color: #fff;
+  }
+  .img-hover:hover .triangle-btn {
+    display: block;
+    z-index: 1;
+  }
+  .img-hover:hover .triangle-ranking {
+    display: block;
+    z-index: 1;
+  }
+  .img-sm-hover {
+    position: relative;
+    background-color: #000;
+  }
+  .img-sm-hover:hover::after {
+    content: 'more';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.7;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .img-sm-hover:hover .triangle-sm {
+    display: block;
+    z-index: 1;
+  }
 }
 
 .h-238 {
@@ -15369,6 +15444,73 @@ ul {
 
 .lh-19 {
   line-height: 19px;
+}
+
+.title-border {
+  position: absolute;
+  border-bottom: 1px solid black;
+  bottom: 0;
+}
+
+.title-hover:hover {
+  color: #E6553B;
+}
+
+.h-91 {
+  height: 91px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+.ranking-border::before {
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid black;
+  width: 100%;
+  bottom: 33px;
+}
+
+.triangle-btn {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+
+.triangle-ranking {
+  position: absolute;
+  right: -1px;
+  bottom: -1px;
+  display: none;
+  width: 0;
+  height: 0;
+  border-right: 16px solid black;
+  border-top: 16px solid transparent;
+}
+
+.triangle-sm {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: none;
+  width: 0;
+  height: 0;
+  border-right: 16px solid #E6553B;
+  border-top: 16px solid transparent;
+}
+
+.artist {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+}
+
+.artist-btn {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
 }
 
 /*# sourceMappingURL=all.css.map */
