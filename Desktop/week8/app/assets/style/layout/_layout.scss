@@ -12,12 +12,21 @@
     .border-title-right{
         border-right: 1px solid black;
     }
-}
-@media (max-width:992px){
-    .wallet{
-        display: none;
+    .container-992{
+        width: 1296px;
+        padding: 0 12px;
     }
+    .w-lg-190{
+        width: 190px !important;
+    }
+}
+.w-85{
+    width: 85px;
 }
 .dropdown-divider{
     opacity: 1;
+}
+.object{
+    object-fit: cover;
+    object-position: top;
 }

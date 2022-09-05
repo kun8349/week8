@@ -4,14 +4,367 @@ layout: ./app/layout.ejs
 engine: ejs
 current: index
 ---
-
-<div class="container">
-    <i class="fa-solid fa-wallet font fw-bold"></i>
-<h1 class="font-family fs-4 fs-md-1">hello</h1>
-<h2 class="m-8 m-md-12">hello</h2>
-<p>hello</p>
-<span>hello</span>
-<a href="" class="text-white">hello</a>
-  <a href="" class="bg-black text-white rounded-4 p-3">123</a>
+<div class="bg-lg-light">
+  <div class="container-fluid container-lg pt-lg-10 pb-lg-20">
+    <div class="card mb-6 mb-lg-0 border-0 border-lg">
+      <div class="row g-0">
+        <div class="d-none d-lg-block col-lg-1 word-lr bg-black px-3 pt-6">
+          <p class="fs-1 lh-base mx-0 font-family text-white">
+            Recommend
+            <span class="mt-2 fs-4 text-white mx-0">推 薦 系 列</span>
+          </p>
+        </div>
+        <div class="col-lg-7">
+          <img src="assets/images/week8-202207/art01.jpg" class="h-238 h-lg-500 w-100" alt="artpic">
+        </div>
+        <div class="col-lg-4 d-lg-flex flex-column justify-content-between">
+          <div class="card-body p-0 pt-8 mb-6 pt-lg-20 pb-lg-6 px-lg-6">
+            <p class="fs-5 font-family mb-2 lh-19">Kemus Wu</p>
+            <h5 class="card-title mt-0 mb-lg-6 display-6 fw-bold">瞳孔:流動的脈絡</h5>
+            <p class="card-text fs-6">眼睛，總是吸引著我們的注意力，看、被看，也許眼睛裡有著從另一個世界看我們的世界。</p>
+          </div>
+          <div class="text-end mt-6 mb-lg-6 me-lg-6 position-relative">
+            <a href="#" class="font-family btn btn-outline-black px-12 py-2 fs-5">more</a>
+            <div class="triangle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card mb-lg-0 border-0 border-lg" style="margin-top: -1px;">
+      <div class="row g-0">
+        <div class="col-lg-6">
+          <div class="row g-0 d-flex flex-row-reverse">
+            <div class="col-lg-6">
+              <img src="assets/images/week8-202207/art02.jpg" class="img-fluid h-372 h-lg-340 w-100 border-end-lg" alt="artpic">
+            </div>
+            <div class="col-lg-6 d-lg-flex flex-column justify-content-between">
+              <div class="card-body p-0 pt-8 mb-6 mb-lg-0 pt-lg-12 pb-lg-6 px-lg-6">
+                <p class="fs-5 font-family mb-2 lh-19">Joanne</p>
+                <h5 class="card-title mt-0 mb-6 mb-lg-6 fs-2 fw-bold">海洋波度</h5>
+                <p class="card-text fs-6">海洋的奧秘向我們揭示了深不可測的一面，它的深度——反映了我們的恐懼、同時也吸引著我們。</p>
+              </div>
+              <div class="text-end my-6 mt-lg-0 me-lg-6 position-relative">
+                <a href="#" class="font-family btn btn-outline-black px-12 py-2 fs-5">more</a>
+                <div class="triangle"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="row g-0 d-flex flex-row-reverse">
+            <div class="col-lg-6">
+              <img src="assets/images/week8-202207/art21.jpg" class="img-fluid h-372 h-lg-340 w-100" alt="artpic">
+            </div>
+            <div class="col-lg-6 d-lg-flex flex-column justify-content-between">
+              <div class="card-body p-0 pt-8 mb-6 mb-lg-0 pt-lg-12 pb-lg-6 px-lg-6">
+                <p class="fs-5 font-family mb-2 lh-19">Michael</p>
+                <h5 class="card-title mt-0 mb-6 mb-lg-6 fs-2 fw-bold">我家窗前的鳥</h5>
+                <p class="card-text fs-6">家門前每天都有不同的小鳥，大多數的小鳥都有特殊能力，特殊能力是什麼我就不說了，希望大家能從作品感受到小鳥的快樂。</p>
+              </div>
+              <div class="text-end my-6 mt-lg-0 me-lg-6 position-relative">
+                <a href="#" class="font-family btn btn-outline-black px-12 py-2 fs-5">more</a>
+                <div class="triangle"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="bg-light">
+  <div class="container py-10 pt-lg-0 pb-lg-20">
+    <div class="d-flex justify-content-between position-relative title-border mb-6 mb-lg-12">
+      <div class="d-flex align-items-center">
+        <h2 class="mb-0 font-family fs-2 fs-lg-1">
+          Ranking
+        </h2>
+        <p class="d-none d-lg-block fs-4 ms-4 fw-bold" style="margin-bottom:-20px ;">熱門藝術家</p>
+      </div>
+      <div class="position-relative" style="margin: -1px;">
+        <a href="#" class="font-family btn px-12 py-2 fs-5 title-hover more">more</a>
+        <div class="triangle"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="card mb-4 mb-lg-6">
+          <div class="row g-0">
+            <div class="d-lg-none col-1 d-flex justify-content-center align-items-center">
+              <p class="fs-3 font-number ranking-number">1</p>
+            </div>
+            <div class="col-4 col-lg-12 position-relative">
+              <p class="d-none d-lg-block font-number ranking-number">1</p>
+              <div>
+                <a href="#" class="d-block img-hover">
+                  <img src="assets/images/week8-202207/art04.jpg" class="img-fluid h-91 h-lg-374 w-100 border-start border-end border-lg-0 border-1 border-black " alt="artpic">
+                  <div class="triangle-btn">
+                    <button type="button" class="btn btn-outline-primary text-white bg-primary py-2 px-12">more</button>
+                    <div class="triangle-ranking"></div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-7 col-lg-12 position-relative ranking-border">
+              <div class="card-body px-2 pt-4 pb-2 lh-1 border-top-lg border-1 border-black">
+                <h5 class="card-title fs-5 fw-bold mb-6">散步遇到的女人</h5>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="card-text fs-6 font-family">Zoe Jiang</p>
+                  <div>
+                    <i class="fa-brands fa-ethereum"></i>
+                    <span class="fs-6 lh-1 fw-400">300</span>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card mb-4 mb-lg-6">
+          <div class="row g-0">
+            <div class="d-lg-none col-1 d-flex justify-content-center align-items-center">
+              <p class="fs-3 font-number ranking-number">2</p>
+            </div>
+            <div class="col-4 col-lg-12 position-relative">
+              <p class="d-none d-lg-block font-number ranking-number">2</p>
+              <div>
+                <a href="#" class="d-block img-hover">
+                  <img src="assets/images/week8-202207/art05.jpg" class="img-fluid h-91 h-lg-374 w-100 border-start border-end border-lg-0 border-1 border-black " alt="artpic">
+                  <div class="triangle-btn">
+                    <button type="button" class="btn btn-outline-primary text-white bg-primary py-2 px-12">more</button>
+                    <div class="triangle-ranking"></div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-7 col-lg-12 position-relative ranking-border">
+              <div class="card-body px-2 pt-4 pb-2 lh-1 border-top-lg border-1 border-black">
+                <h5 class="card-title fs-5 fw-bold mb-6">爆炸頭的母親</h5>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="card-text fs-6 font-family">Yui</p>
+                  <div>
+                    <i class="fa-brands fa-ethereum"></i>
+                    <span class="fs-6 lh-1 fw-400">300</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card mb-4 mb-lg-6">
+          <div class="row g-0">
+            <div class="d-lg-none col-1 d-flex justify-content-center align-items-center">
+              <p class="fs-3 font-number ranking-number">3</p>
+            </div>
+            <div class="col-4 col-lg-12 position-relative">
+              <p class="d-none d-lg-block font-number ranking-number">3</p>
+              <div>
+                <a href="#" class="d-block img-hover">
+                  <img src="assets/images/week8-202207/art06.jpg" class="img-fluid h-91 h-lg-374 w-100 border-start border-end border-lg-0 border-1 border-black " alt="artpic">
+                  <div class="triangle-btn">
+                    <button type="button" class="btn btn-outline-primary text-white bg-primary py-2 px-12">more</button>
+                    <div class="triangle-ranking"></div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-7 col-lg-12 position-relative ranking-border">
+              <div class="card-body px-2 pt-4 pb-2 lh-1 border-top-lg border-1 border-black">
+                <h5 class="card-title fs-5 fw-bold mb-6">夏天的時候</h5>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="card-text fs-6 font-family">Bug Lin</p>
+                  <div>
+                    <i class="fa-brands fa-ethereum"></i>
+                    <span class="fs-6 lh-1 fw-400">300</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card mb-4 mb-lg-0">
+          <div class="row g-0">
+            <div class="col-1 d-flex justify-content-center align-items-center">
+              <p class="fs-3 font-number">4</p>
+            </div>
+            <div class="col-4">
+              <a href="#" class="d-block img-sm-hover">
+                <img src="assets/images/week8-202207/art13.jpg" class="img-fluid img-fluid h-91 w-100 border-start border-end border-1 border-black" alt="artpic">
+                <div class="triangle-sm"></div>
+              </a>
+            </div>
+            <div class="col-7 position-relative ranking-border">
+              <div class="card-body px-2 pt-4 pb-2 lh-1">
+                <h5 class="card-title fs-5 fw-bold mb-6">追求者送我的花</h5>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="card-text fs-6 font-family">Michael</p>
+                  <div>
+                    <i class="fa-brands fa-ethereum"></i>
+                    <span class="fs-6 lh-1 fw-400">300</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card mb-4 mb-lg-0">
+          <div class="row g-0">
+            <div class="col-1 d-flex justify-content-center align-items-center">
+              <p class="fs-3 font-number">5</p>
+            </div>
+            <div class="col-4">
+              <a href="#" class="d-block img-sm-hover">
+                <img src="assets/images/week8-202207/art07.jpg" class="img-fluid img-fluid h-91 w-100 border-start border-end border-1 border-black" alt="artpic">
+                <div class="triangle-sm"></div>
+              </a>
+            </div>
+            <div class="col-7 position-relative ranking-border">
+              <div class="card-body px-2 pt-4 pb-2 lh-1">
+                <h5 class="card-title fs-5 fw-bold mb-6">今天釣到的魚</h5>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="card-text fs-6 font-family">Wei JJ</p>
+                  <div>
+                    <i class="fa-brands fa-ethereum"></i>
+                    <span class="fs-6 lh-1 fw-400">300</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card mb-0">
+          <div class="row g-0">
+            <div class="col-1 d-flex justify-content-center align-items-center">
+              <p class="fs-3 font-number">5</p>
+            </div>
+            <div class="col-4">
+              <a href="#" class="d-block img-sm-hover">
+                <img src="assets/images/week8-202207/art08.jpg" class="img-fluid img-fluid h-91 w-100 border-start border-end border-1 border-black" alt="artpic">
+                <div class="triangle-sm"></div>
+              </a>
+            </div>
+            <div class="col-7 position-relative ranking-border">
+              <div class="card-body px-2 pt-4 pb-2 lh-1">
+                <h5 class="card-title fs-5 fw-bold mb-6">人生中的貓咪們</h5>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="card-text fs-6 font-family">Even Lai</p>
+                  <div>
+                    <i class="fa-brands fa-ethereum"></i>
+                    <span class="fs-6 lh-1 fw-400">300</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="bg-light">
+  <div class="container pb-10">
+    <div class="d-flex justify-content-between position-relative title-border mb-6 mb-lg-12">
+      <div class="d-flex align-items-center">
+        <h2 class="mb-0 font-family fs-2 fs-lg-1">
+          Artist
+        </h2>
+        <p class="d-none d-lg-block fs-4 ms-4 fw-bold" style="margin-bottom:-20px ;">熱門藝術家</p>
+      </div>
+      <div class="position-relative" style="margin: -1px;">
+        <a href="#" class="font-family btn px-12 py-2 fs-5 title-hover more">more</a>
+        <div class="triangle"></div>
+      </div>
+    </div>
+    <div class="d-lg-none swiper mySwiper position-relative">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="position-relative">
+            <div class="position-relative">
+              <img src="assets/images/week8-202207/artist02.jpg" class="card-img-top w-100 h-232" alt="artist">
+              <div class="artist-btn bg-white">
+                <a href="#" class="font-family btn btn-outline-black px-12 py-2 fs-5">more</a>
+                <div class="triangle"></div>
+              </div>
+            </div>
+            <h5 class="font-family text-white fs-2 artist">Antony Wu</h5>
+            <div class="bg-white mt-4 p-6">
+              <p class="fs-6">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="position-relative">
+            <div class="position-relative">
+              <img src="assets/images/week8-202207/artist03.jpg" class="w-100 h-232 object" alt="artist">
+              <div class="artist-btn bg-white">
+                <a href="#" class="font-family btn btn-outline-black px-12 py-2 fs-5">more</a>
+                <div class="triangle"></div>
+              </div>
+            </div>
+            <h5 class="font-family text-white fs-2 artist">Antony Wu</h5>
+            <div class="bg-white mt-4 p-6">
+              <p class="fs-6">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="position-relative">
+            <div class="position-relative">
+              <img src="assets/images/week8-202207/artist01.jpg" class="w-100 h-232 object" alt="artist">
+              <div class="artist-btn bg-white">
+                <a href="#" class="font-family btn btn-outline-black px-12 py-2 fs-5">more</a>
+                <div class="triangle"></div>
+              </div>
+            </div>
+            <h5 class="font-family text-white fs-2 artist">Antony Wu</h5>
+            <div class="bg-white mt-4 p-6">
+              <p class="fs-6">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="position-relative">
+            <div class="position-relative">
+              <img src="assets/images/week8-202207/artist04.jpg" class="w-100 h-232 object" alt="artist">
+              <div class="artist-btn bg-white">
+                <a href="#" class="font-family btn btn-outline-black px-12 py-2 fs-5">more</a>
+                <div class="triangle"></div>
+              </div>
+            </div>
+            <h5 class="font-family text-white fs-2 artist">Antony Wu</h5>
+            <div class="bg-white mt-4 p-6">
+              <p class="fs-6">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination mt-6 swiper-btn">
+      </div>
+    </div>
+    <div class="swiper_lg mySwiper_lg">
+      <div class="swiper_lg-wrapper">
+        <div class="swiper_lg-slide">Slide 1</div>
+        <div class="swiper_lg-slide">Slide 2</div>
+        <div class="swiper_lg-slide">Slide 3</div>
+        <div class="swiper_lg-slide">Slide 4</div>
+        <div class="swiper_lg-slide">Slide 5</div>
+        <div class="swiper_lg-slide">Slide 6</div>
+        <div class="swiper_lg-slide">Slide 7</div>
+        <div class="swiper_lg-slide">Slide 8</div>
+        <div class="swiper_lg-slide">Slide 9</div>
+      </div>
+      <div class="swiper_lg-pagination"></div>
+    </div>
+  </div>
 </div>
 

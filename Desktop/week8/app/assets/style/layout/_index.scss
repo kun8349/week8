@@ -1,5 +1,167 @@
-.index__h1 {
-  color:#00cc99;
-  font-size: 20px;
-  font-weight: 400;
+@media (min-width:768px){
+  .h-lg-500{
+    height: 500px !important; 
+  } 
 }
+@media (min-width:991px){
+  .h-lg-340{
+    height: 340px !important;
+  }
+  .h-lg-374{
+    height: 374px !important;
+  }
+  .ranking-number{
+    position: absolute;
+    border: 1px solid black;
+    font-size: 32px !important;
+    padding: 7px 24px;
+    background-color: white;
+    top: -1px;
+    left: -1px;
+    z-index: 1;
+  }
+  .img-hover {
+    position: relative;
+    background-color: #000;
+    &:hover {
+      &::after {
+        content: 'more';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: #000;
+        opacity: 0.7;
+        color: #fff;
+      }
+      
+      .triangle-btn {
+        display: block;
+        z-index: 1;
+      }
+      .triangle-ranking{
+        display: block;
+        z-index: 1;
+      }
+    }
+    
+  }
+  .img-sm-hover {
+    position: relative;
+    background-color: #000;
+    &:hover {
+      &::after {
+        content: 'more';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: #000;
+        opacity: 0.7;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .triangle-sm {
+        display: block;
+        z-index: 1;
+      }
+    }
+  }
+  
+}
+.h-238{
+  height: 238px;
+}
+.h-372{
+  height: 372px;
+}
+.h-232{
+  height: 232px;
+}
+.word-lr{
+  writing-mode: vertical-lr;
+}
+.lh-19{
+  line-height: 19px;
+}
+.title-border{
+  position: absolute;
+  border-bottom: 1px solid black;
+  bottom: 0;
+}
+.title-hover{
+  &:hover{
+    color: $primary;
+  }
+}
+.h-91{
+  height: 91px;
+  object-fit: cover;
+  object-position:top;
+}
+.ranking-border{
+  &::before{
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid black;
+    width: 100%;
+    bottom: 33px;
+  }
+}
+.triangle-btn {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+.triangle-ranking{
+  position: absolute;
+  right: -1px;
+  bottom: -1px;
+  display: none;
+
+  width: 0;
+  height: 0;
+  border-right: 16px solid black;
+  border-top: 16px solid transparent;
+}
+.triangle-sm {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: none;
+  
+  // 三角形  
+  width: 0;
+  height: 0;
+  border-right: 16px solid #E6553B;
+  border-top: 16px solid transparent;
+}
+.artist{
+  position: absolute;
+  top: 24px;
+  left: 24px;
+}
+.artist-btn{
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+}
+.swiper-pagination-bullet{
+  background-color: black;
+  opacity: 1;
+  border-radius: 0;
+  &:active{
+    width: 16px;
+    background-color: #E6553B;
+  }
+}
+.swiper-btn{
+  position: initial;
+}
+
+
