@@ -15433,6 +15433,16 @@ ul {
     display: block;
     z-index: 1;
   }
+  .swiper-position {
+    position: absolute;
+    bottom: 0;
+  }
+  .h-232 {
+    height: 439px !important;
+  }
+  .w-bg-25 {
+    width: 100px !important;
+  }
 }
 
 .h-238 {
