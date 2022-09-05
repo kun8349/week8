@@ -15352,6 +15352,13 @@ ul {
   opacity: 1;
 }
 
+.object {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
 @media (min-width: 768px) {
   .h-lg-500 {
     height: 500px !important;
@@ -15436,6 +15443,10 @@ ul {
   height: 372px;
 }
 
+.h-232 {
+  height: 232px;
+}
+
 .word-lr {
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
@@ -15511,6 +15522,21 @@ ul {
   position: absolute;
   bottom: 8px;
   right: 8px;
+}
+
+.swiper-pagination-bullet {
+  background-color: black;
+  opacity: 1;
+  border-radius: 0;
+}
+
+.swiper-pagination-bullet:active {
+  width: 16px;
+  background-color: #E6553B;
+}
+
+.swiper-btn {
+  position: initial;
 }
 
 /*# sourceMappingURL=all.css.map */
