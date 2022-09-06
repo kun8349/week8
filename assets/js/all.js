@@ -6,13 +6,13 @@ var swiper = new Swiper(".mySwiper", {
     el: ".swiper-pagination",
     clickable: true
   },
-  autoplay: {
-    delay: 2500,
-    stopOnLastSlide: false,
-    disableOnInteraction: false
-  },
-  loop: true,
-  loopFillGroupWithBlank: true,
+  //autoplay: {
+  //delay: 2500,
+  //stopOnLastSlide: false,
+  //disableOnInteraction: false,
+  //},
+  //loop: true,
+  //loopFillGroupWithBlank: true,
   breakpoints: {
     375: {
       slidesPerView: 1,
