@@ -28,5 +28,9 @@
 }
 .object{
     object-fit: cover;
+    object-position: center;
+}
+.object-top{
+    object-fit: cover;
     object-position: top;
 }

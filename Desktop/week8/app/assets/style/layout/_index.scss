@@ -54,6 +54,7 @@
       &::after {
         content: 'more';
         position: absolute;
+        font-family: "Squada One","Noto Sans" ;
         top: 0;
         right: 0;
         bottom: 0;
@@ -71,7 +72,65 @@
       }
     }
   }
-  
+  .swiper-position{
+    position: absolute;
+    bottom: 0;
+  }
+  .h-232{
+    height: 439px !important;
+  }
+  .w-bg-25{
+    width: 100px !important;
+  }
+  .w-306{
+    width: 306px !important;
+  }
+  .h-262{
+    height: 262px !important;
+  }
+  .swiper-w{
+    filter: grayscale(100%);
+    .test-btn-1{
+      display: none;
+    }
+    &:hover{
+      filter: grayscale(0);
+      width: 636px !important;
+      height: 439px !important;
+      .test-btn-1{
+        display: block;
+      }
+      .artist-btn{
+        bottom: 24px;
+        right: 24px;
+      }
+    }
+  }
+  .d-test{
+    &:hover{
+      &::before{
+        content: 'Antony Wu';
+        color: white;
+        font-family: "Squada One","Noto Sans" ;
+        font-size: 80px;
+        position: absolute;
+        top: 24px;
+        left: 24px;
+        width: 258px;
+        line-height: 1;
+      }
+      &::after{
+        content: '​喜愛大自然，創作題材常見大山、大水、花草與樹木。';
+        background: rgba(#FFFFFF,0.85);
+        width: 306px;
+        padding: 24px;
+        position: absolute;
+        bottom: 24px;
+        left: 24px;
+      }
+    }
+  }
+ 
 }
 .h-238{
   height: 238px;
@@ -163,5 +222,37 @@
 .swiper-btn{
   position: initial;
 }
-
+.hover-btn{
+  &:hover{
+    .title-btn{
+      background: #E6553B;
+      color: white;
+      border: 1px solid black;
+    }
+    
+    .triangle{
+      border-right: 16px solid black;
+      border-top: 16px solid transparent;
+    }
+  }
+  
+}
+.h-139{
+  height: 139px;
+}
+.h-151{
+  height: 151px;
+}
+.h-93{
+  height: 93px;
+}
+.h-173{
+  height: 173px;
+}
+.h-192{
+  height: 192px;
+}
+.h-99{
+  height: 99px;
+}
 
