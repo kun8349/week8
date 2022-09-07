@@ -15360,6 +15360,13 @@ ul {
      object-position: center;
 }
 
+.object-top {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
 @media (min-width: 768px) {
   .h-lg-500 {
     height: 500px !important;
@@ -15413,6 +15420,7 @@ ul {
   .img-sm-hover:hover::after {
     content: 'more';
     position: absolute;
+    font-family: "Squada One","Noto Sans";
     top: 0;
     right: 0;
     bottom: 0;
@@ -15489,17 +15497,6 @@ ul {
     position: absolute;
     bottom: 24px;
     left: 24px;
-  }
-  .test-btn:hover::after {
-    content: 'more';
-    position: absolute;
-    bottom: 24px;
-    right: 24px;
-    background-color: #fff;
-    width: 132px;
-    font-size: 18px;
-    color: #000;
-    font-family: "Squada One","Noto Sans";
   }
 }
 
@@ -15605,6 +15602,41 @@ ul {
 
 .swiper-btn {
   position: initial;
+}
+
+.hover-btn:hover .title-btn {
+  background: #E6553B;
+  color: white;
+  border: 1px solid black;
+}
+
+.hover-btn:hover .triangle {
+  border-right: 16px solid black;
+  border-top: 16px solid transparent;
+}
+
+.h-139 {
+  height: 139px;
+}
+
+.h-151 {
+  height: 151px;
+}
+
+.h-93 {
+  height: 93px;
+}
+
+.h-173 {
+  height: 173px;
+}
+
+.h-192 {
+  height: 192px;
+}
+
+.h-99 {
+  height: 99px;
 }
 
 /*# sourceMappingURL=all.css.map */
