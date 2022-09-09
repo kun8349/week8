@@ -19,15 +19,32 @@ var swiper = new Swiper(".mySwiper", {
       spaceBetween: 30,
       freeMode: true
     },
+    768: {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      loop: true,
+      //slidesPerView: "auto",
+      spaceBetween: 24,
+      slidesPerView: 1,
+      coverflowEffect: {
+        rotate: 0,
+        // y軸旋轉角度
+        stretch: 0,
+        //每个slide之间的拉伸值，越大slide靠得越紧
+        depth: 0,
+        //slide的位置深度。值越大z轴距离越远，看起来
+        modifier: 1,
+        //depth和rotate和stretch的倍率
+        slideShadows: false //是否开启slide阴影
+
+      }
+    },
     992: {
       slidesPerView: 3,
-      spaceBetween: 30,
+      spaceBetween: 24,
       centeredSlides: true
     }
   }
-});
-$(".swiper-pagination-bullet-active").on('click', function (e) {
-  e.preventDefault();
-  $(this).toggleClass(".swiper-pagination-bullet-active");
 });
 //# sourceMappingURL=all.js.map
