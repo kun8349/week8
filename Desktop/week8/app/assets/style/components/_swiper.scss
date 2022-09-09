@@ -1,0 +1,283 @@
+@media (min-width:375px){
+  .swiper {
+    width: 100%;
+    height: 376px;
+    //439+48+8=495px
+  }
+  .swiper-wrapper{
+    height: 376px;
+  }
+  .swiper-slide{
+    position: relative;
+    
+    .artistName{
+        position: absolute;
+        left:24px;
+        top:24px;
+        line-height: 85px;
+       
+    }
+    .artistContent{
+        position: absolute;
+        bottom:48px !important;
+        left:0px !important;
+        width: 100% !important;
+        opacity: 85%;
+        
+    }
+    .swiper-btn{
+        position: absolute !important;
+        right:24px !important;
+        bottom:45% !important;
+        
+    }
+    .swiper-triangle {
+      position: absolute;
+      right: 0px;
+      bottom: 0px;
+     
+      width: 0;
+      height: 0;
+      border-right: 16px solid #E6553B;
+      border-top: 16px solid transparent;
+    }
+  }
+}
+@media (min-width:768px){
+  .swiper-pagination-bullet{
+    width: 8px;
+    height: 8px;
+    background-color: #000;
+    opacity: 100%;
+    border-radius:0%;
+  
+    &-active{
+        width: 16px;
+        background-color: $primary;
+    }
+  }  
+  .swiper {
+    width: 100%;
+    height: 495px;
+    //439+48+8=495px
+  }
+  .swiper-wrapper{
+    height: 439px;
+  }
+  
+  .swiper-slide {
+    //background: gray;
+   // width: 306px !important;
+    height: 262px ;
+    .artistPhoto{
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: grayscale(100%);
+        //filter: gray;
+    }
+    /* Center slide text vertically */
+   
+  }
+  .swiper-slide-active{
+    //width: 100% !important; //div 預設撐滿一行, 所以不用寫
+    height: 439px !important;
+    .artistPhoto{
+        filter:none;
+    }
+  }
+  .swiper-slide{
+    
+    
+    .artistName{
+        width: 40.5%;
+        position: absolute;
+        left:24px;
+        top:24px;
+        line-height: 85px;
+        display: none;
+    }
+    .artistContent{
+        position: absolute;
+        bottom:24px !important;
+        left:24px !important;
+        width: 48.2% !important;
+        opacity: 85%;
+        display: none;
+    }
+    .swiper-btn{
+        position: absolute !important;
+        right:24px !important;
+        bottom:24px !important;
+        display: none;
+    }
+    &-active{
+        .artistName, .artistContent ,.swiper-btn{
+            display: block;
+        }
+    }
+  }
+}
+
+@media (min-width:991px){
+  /*.swiper-position{
+    position: absolute;
+    bottom: 0;
+  }
+  .swiper-w{
+    filter: grayscale(100%);
+    .test-btn-1{
+      display: none;
+    }
+    &:hover{
+      filter: grayscale(0);
+      width: 636px !important;
+      height: 439px !important;
+      .test-btn-1{
+        display: block;
+      }
+      .artist-btn{
+        bottom: 24px;
+        right: 24px;
+      }
+    }
+  }
+  .w-306{
+    width: 306px !important;
+  }
+  .d-test{
+    &:hover{
+      &::before{
+        content: 'Antony Wu';
+        color: white;
+        font-family: "Squada One","Noto Sans" ;
+        font-size: 80px;
+        position: absolute;
+        top: 24px;
+        left: 24px;
+        width: 258px;
+        line-height: 1;
+      }
+      &::after{
+        content: '​喜愛大自然，創作題材常見大山、大水、花草與樹木。';
+        background: rgba(#FFFFFF,0.85);
+        width: 306px;
+        padding: 24px;
+        position: absolute;
+        bottom: 24px;
+        left: 24px;
+      }
+    }
+  }
+  */
+  .swiper-slide-prev, .swiper-slide-next {
+    width: 23% !important;
+  }
+  .swiper-slide-active{
+    width: 50% !important;
+  }
+}
+.swiper-pagination-bullet{
+  width: 8px;
+  height: 8px;
+  background-color: #000;
+  opacity: 100%;
+  border-radius:0%;
+
+  &-active{
+      width: 16px;
+      background-color: $primary;
+  }
+}  
+/*.swiper-pagination{
+    position: initial;
+    .swiper-pagination-bullet{
+        width: 8px;
+        height: 8px;
+        background-color: black;
+        opacity: 1;
+        border-radius: 0;
+        &-active{
+          width: 16px;
+          background-color: #E6553B;
+        }
+      }
+}*/
+/*.h-232{
+  height: 262px !important;
+}
+.swiper {
+  width: 100%;
+  height: 495px;
+  //439+48+8=495px
+}
+.swiper-wrapper{
+  height: 439px;
+}
+
+.swiper-slide {
+  //background: gray;
+ // width: 306px !important;
+  height: 262px ;
+  .artistPhoto{
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: grayscale(100%);
+      //filter: gray;
+  }
+}
+.swiper-slide-active{
+  //width: 100% !important; //div 預設撐滿一行, 所以不用寫
+  height: 439px !important;
+  .artistPhoto{
+      filter:none;
+  }
+}
+.swiper-slide{
+  position: relative;
+  
+  .artistName{
+      width: 40.5%;
+      position: absolute;
+      left:24px;
+      top:24px;
+      line-height: 85px;
+      display: none;
+  }
+  .artistContent{
+      position: absolute;
+      bottom:24px;
+      left:24px;
+      width: 48.2%;
+      opacity: 85%;
+      display: none;
+  }
+  .swiper-btn{
+      position: absolute;
+      right:24px;
+      bottom:24px;
+      display: none;
+  }
+  &-active{
+      .artistName, .artistContent ,.swiper-btn{
+          display: block;
+      }
+  }
+}
+.swiper-triangle {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+ 
+  width: 0;
+  height: 0;
+  border-right: 16px solid #E6553B;
+  border-top: 16px solid transparent;
+}*/
+
+
+
+
