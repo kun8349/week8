@@ -1,0 +1,44 @@
+.nav-tabs {
+    border-bottom: 1px solid black;
+  
+    .nav-link {
+      font-family: "Squada One","Noto Sans" ;
+      color: #808080;
+      margin-bottom: -1px;
+      background: none;
+      border: 1px solid transparent;
+      border-top-left-radius: 0.25rem;
+      border-top-right-radius: 0.25rem;
+      @include border-top-radius($nav-tabs-border-radius);
+  
+      &:hover{
+        color: black;
+        border: 1px solid #F0F0F0;
+        border-bottom: 1px solid black;
+      }
+      &:focus {
+       
+      }
+  
+      &.disabled {
+        color: $nav-link-disabled-color;
+        background-color: transparent;
+        border-color: transparent;
+      }
+    }
+  
+    .nav-link.active,
+    .nav-item.show .nav-link {
+      color: black;
+      background-color: #f0f0f0;
+      border-color: #000 #000 #F0F0F0;
+    }
+  
+    .dropdown-menu {
+      // Make dropdown border overlap tab border
+      margin-top: -$nav-tabs-border-width;
+      // Remove the top rounded corners here since there is a hard edge above the menu
+      @include border-top-radius(0);
+    }
+  }
+  
