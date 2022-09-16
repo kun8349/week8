@@ -45,8 +45,8 @@
                 <li class="nav-item border-title-right header-hover">
                   <a class="py-6 px-lg-12 py-lg-10 text-center nav-link text-black fs-6 fw-bold" href="#">市值</a>
                 </li>
-                <li class="nav-item header-hover">
-                  <a class="py-lg-6 text-lg-center px-lg-12 py-lg-10 nav-link text-black fs-3 fw-bold" href="#"><i class="d-none d-lg-block fa-solid fa-wallet"></i></a>
+                <li class="nav-item">
+                  <button class="py-lg-6 text-lg-center px-lg-12 py-lg-10 nav-link text-black fs-3 fw-bold border-0 header-hover" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="d-none d-lg-block fa-solid fa-wallet"></i></button>
                 </li>
               </ul>
               </div>
@@ -66,8 +66,48 @@
             </ul>
           </div>
         </nav>
-     
     </div>
+    <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="card">
+        <div class="card-body p-0">
+          <h5 class="card-title border-bottom text-center py-4 fs-4 mb-4">連結你的錢包</h5>
+          <ul class="flex-wrap d-flex justify-content-between list-unstyled px-3">
+            <li class="d-flex align-items-center border p-4 layout-hover mb-2" style="width: 49%;">
+              <img src="assets/images/week8-202207/logo/connect01.png" alt="walletLogo" class="w-16 me-4">
+              <p class="font-family fs-5">MetaMask</p>
+            </li>
+            <li class="d-flex align-items-center border p-4 layout-hover mb-2" style="width: 49%;">
+              <img src="assets/images/week8-202207/logo/connect02.png" alt="walletLogo" class="w-16 me-4">
+              <p class="font-family fs-5">Coinbase Wallet</p>
+            </li>
+            <li class="d-flex align-items-center border p-4 layout-hover mb-2" style="width: 49%;">
+              <img src="assets/images/week8-202207/logo/connect03.png" alt="walletLogo" class="w-16 me-4">
+              <p class="font-family fs-5">WalletConnect</p>
+            </li>
+            <li class="d-flex align-items-center border p-4 layout-hover mb-2" style="width: 49%;">
+              <img src="assets/images/week8-202207/logo/connect04.png" alt="walletLogo" class="w-16 me-4">
+              <p class="font-family fs-5">Phantom</p>
+            </li>
+            <li class="d-flex align-items-center border p-4 layout-hover mb-6" style="width: 49%;">
+              <img src="assets/images/week8-202207/logo/connect05.png" alt="walletLogo" class="w-16 me-4">
+              <p class="font-family fs-5">Glow</p>
+            </li>
+            <li class="d-flex align-items-center border p-4 layout-hover mb-6" style="width: 49%;">
+              <img src="assets/images/week8-202207/logo/connect06.png" alt="walletLogo" class="w-16 me-4">
+              <p class="font-family fs-5">Fortmatic</p>
+            </li>
+          </ul>
+          <div class="hover-btn mx-auto text-center mb-8">
+            <a href="#" class="font-family btn btn-outline-black bg-primary text-white px-12 py-2 fs-5">連結錢包</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
     
   
 
@@ -127,13 +167,13 @@
         <!-- Nav tabs -->
         <ul class="nav nav-tabs mb-6 mb-lg-10" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
-              <button class="nav-link p-4 px-lg-12 active" id="home-tab" data-bs-toggle="tab" data-bs-target="#artWorks" type="button" role="tab" aria-controls="home" aria-selected="true">
+              <button class="nav-link p-4 px-lg-12" id="home-tab" data-bs-toggle="tab" data-bs-target="#artWorks" type="button" role="tab" aria-controls="home" aria-selected="true">
                 <h2 class="d-inline fs-2 fs-lg-1 lh-1 ">Art Works<span class="fs-4 fw-bold ms-4 d-none d-lg-inline">系列作品</span></h2>
               </button>
             </li>
       
             <li class="nav-item" role="presentation">
-              <button class="nav-link p-4 px-lg-12" id="home-tab" data-bs-toggle="tab" data-bs-target="#collection" type="button" role="tab" aria-controls="home" aria-selected="true">
+              <button class="nav-link p-4 px-lg-12 active" id="home-tab" data-bs-toggle="tab" data-bs-target="#collection" type="button" role="tab" aria-controls="home" aria-selected="true">
                 <h2 class="d-inline fs-2 fs-lg-1 lh-1">Collection<span class="fs-4 fw-bold ms-4 d-none d-lg-inline">收藏品</span></h2>
               </button>
             </li>
@@ -141,7 +181,7 @@
       
         <!-- Tab panes -->
         <div class="tab-content">
-          <div class="tab-pane active" id="artWorks" role="tabpanel" aria-labelledby="artWorks-tab">
+          <div class="tab-pane" id="artWorks" role="tabpanel" aria-labelledby="artWorks-tab">
           <div class="bg-light pb-10 pb-lg-22">  
             <div class="card border position-relative mb-4 mb-lg-22">
               <div class="position-absolute top-0 start-0 explore-triangle-left"></div>
@@ -172,7 +212,7 @@
                       <!-- 按鈕 -->
                       <div class="hover-btn mx-auto ms-lg-22 mt-4 mt-lg-0">
                         <a href="#" class="font-family btn btn-outline-black px-12 py-2 fs-5 triangle-test normal-btn">more</a>
-                    </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -212,7 +252,7 @@
             </div> 
             </div>  
           </div>
-          <div class="tab-pane pb-14 pb-lg-22" id="collection" role="tabpanel" aria-labelledby="profile-tab">
+          <div class="tab-pane pb-14 pb-lg-22 active" id="collection" role="tabpanel" aria-labelledby="profile-tab">
             <div class="bg-light">
               <div>
                 <div class="row" data-masonry='{"percentPosition": true,"horizontalOrder": true }' style="position: relative; height: 1783px;">

@@ -18035,6 +18035,16 @@ ul {
   z-index: 1;
 }
 
+.w-16 {
+  width: 16px;
+  height: 16px;
+}
+
+.layout-hover:hover {
+  cursor: pointer;
+  color: #E6553B;
+}
+
 @media (min-width: 768px) {
   .h-lg-500 {
     height: 500px !important;
