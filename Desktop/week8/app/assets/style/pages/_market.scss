@@ -1,0 +1,33 @@
+@media (min-width:991px){
+    .market-w-38-54{
+        width: 54px !important;
+   }
+    
+}
+.triangle-market{
+    position: relative;
+    &::after{
+        content: '';
+        position: absolute;
+        right: 0px;
+        bottom: -28px;
+    
+        width: 0;
+        height: 0;
+        border-right: 32px solid black;
+        border-top: 32px solid transparent;
+    }
+    &::before{
+        content: '+';
+        position: absolute;
+        right: 5px;
+        bottom: -35px;
+        font-size: 20px;
+        color: white;
+        z-index: 1;
+    }
+}
+.market-w-38-54{
+    width: 38px;
+}
+ 
