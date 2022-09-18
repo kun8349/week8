@@ -1,4 +1,9 @@
 //
+@media (min-width:768px){
+    .modal-w-49{
+        width: 49% !important;
+    }
+}
 @media (min-width:991px){
     .header-hover{
         &:hover{
@@ -20,6 +25,7 @@
         width: 190px !important;
     }
 }
+
 .w-85{
     width: 85px;
 }
@@ -60,3 +66,9 @@
         color: #E6553B;
     }
 }
+.modal-btn{
+   position: absolute;
+   top: 16px;
+   right: 12px;
+}
+
